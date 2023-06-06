@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-def is_lowercase(c):
-    if ord('a') <= ord(c) <= ord('z'):
+def islower(c):
+    character = ord(c)
+    if ord('a') <= character <= ord('z'):
         return True
     else:
         return False
