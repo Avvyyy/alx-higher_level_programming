@@ -5,8 +5,8 @@ if __name__ == "__main__":
 
     no_of_args = len(sys.argv) - 1
     i = 1
-    
-    if no_of_args >  1:
+
+    if no_of_args > 1:
         print("{} arguments:".format(no_of_args))
     elif no_of_args == 1:
         print("{} argument:".format(1))
