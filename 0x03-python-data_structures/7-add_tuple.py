@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def add_tuple(tuple_a=(), tuple_b=()):
-    # Create new tuples by extending the input tuples with 0s to ensure a minimum length of 2
+
     tuple_a_extended = tuple_a + (0, 0)
     tuple_b_extended = tuple_b + (0, 0)
 
