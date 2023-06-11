@@ -5,7 +5,8 @@ def divisible_by_2(my_list=[]):
 
     for element in my_list:
         if element % 2 == 0:
-           boolean_list += True
+           result =  True
         else:
-            boolean_lit += False
+            result += False
+        boolean_list.append(result)
     return boolean_list
