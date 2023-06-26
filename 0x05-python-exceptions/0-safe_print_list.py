@@ -9,7 +9,7 @@ def safe_print_list(my_list=[], x=0):
                 print(i, end="")
                 count += 1
         print()
-    except:
+    except IndexError:
         pass
 
     return count
