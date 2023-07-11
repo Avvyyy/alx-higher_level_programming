@@ -2,6 +2,7 @@
 
 import json
 
+
 def from_json_string(my_str):
     """
     Program  to return the python represenation of json
