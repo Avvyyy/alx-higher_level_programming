@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Contains the function append_write"""
+
 
 def append_write(filename="", text=""):
     """
@@ -6,7 +8,7 @@ def append_write(filename="", text=""):
      and returns the number of characters added
 
      Args:
-     filenmae: FIle to which data will be appended
+     filename: FIle to which data will be appended
      text: text to be appeneded to the file
 
      Return:

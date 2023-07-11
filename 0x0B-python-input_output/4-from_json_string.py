@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Contains from_json_string"""
 
 import json
 
