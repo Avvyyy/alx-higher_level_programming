@@ -93,9 +93,8 @@ class Rectangle(Base):
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for w in range(self.width)]
             print("")
-
-
-     def update(self, *args, **kwargs):
+            
+    def update(self, *args, **kwargs):
         """Update the Rectangle.
         Args:
             *args (ints): New attribute values.
@@ -105,7 +104,7 @@ class Rectangle(Base):
                 - 4th argument represents x attribute
                 - 5th argument represents y attribute
             **kwargs (dict): New key/value pairs of attributes.
-        """
+            """
             if args and len(args) != 0:
                 a = 0
                 for arg in args:
