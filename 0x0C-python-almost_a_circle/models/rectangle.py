@@ -82,6 +82,7 @@ class Rectangle(Base):
         """Return the area of the Rectangle."""
         return self.width * self.height
 
+
     def display(self):
         """Print the Rectangle using the `#` character."""
         if self.width == 0 or self.height == 0:
@@ -105,7 +106,7 @@ class Rectangle(Base):
                 - 5th argument represents y attribute
             **kwargs (dict): New key/value pairs of attributes.
             """
-            if args and len(args) != 0:
+        if args and len(args) != 0:
                 a = 0
                 for arg in args:
                     if a == 0:
