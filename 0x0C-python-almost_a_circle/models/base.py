@@ -1,6 +1,8 @@
+#!/usr/bin/python3
 import json
 import csv
 import turtle
+
 
 class Base:
     __nb_objects = 0
