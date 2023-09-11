@@ -3,10 +3,9 @@
 const args = process.argv.slice(2);
 
 function argMessage (args){
-	if (args === 0){
+	if (args === 0 ){
 		console.log('No argument');
-	}
-	else{
+	} else {
 		console.log(args[0]);
 	}
 }
