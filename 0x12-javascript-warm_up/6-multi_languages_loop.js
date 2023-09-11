@@ -3,7 +3,7 @@
 const myArray = [
   'C is fun',
   'Python is cool',
-  'Javascript is amazing'
+  'JavaScript is amazing'
 ];
 
 for (const phrase of myArray) {
