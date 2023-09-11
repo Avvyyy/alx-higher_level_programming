@@ -9,4 +9,3 @@ if (isNaN(args)) {
     console.log('C is fun');
   }
 }
-
