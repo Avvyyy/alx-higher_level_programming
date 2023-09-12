@@ -6,6 +6,6 @@ const myArray = [
 	'Javascript is amazing'
 ];
 
-for (const phrase of myArray){
+for (const phrase of myArray) {
 	console.log(phrase);
 }
