@@ -1,10 +1,8 @@
 #!/usr/bin/python3
+"""Program to retrieve states from an SQl database"""
+
 import MySQLdb
 import sys
-
-if len(sys.argv) != 4:
-    print("Usage: {} <MySQL username> <MySQL password> <Database name>".format(sys.argv[0]))
-    sys.exit(1)
 
 username = sys.argv[1]
 password = sys.argv[2]
@@ -29,4 +27,5 @@ except MySQLdb.Error as e:
     print("Error connecting to MySQL:", e)
 finally:
     # Close the database connection
+    cursor.close()
     db.close()
