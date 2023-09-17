@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
 
-"""Lists all values in the states table where name matches the arg"""
+"""
+Lists all values in the states tbl where name matches the arg safely
+"""
 
 
 import sys
@@ -12,10 +14,7 @@ if __name__ == '__main__':
                          db=sys.argv[3], port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT * \
-    FROM states \
-    WHERE CONVERT(`name` USING Latin1) \
-    COLLATE Latin1_General_CS = '{}';".format(sys.argv[4]))
+    cur.execute("SELECT * FROM states WHERE name = %s;", (sys.argv[4],))
     states = cur.fetchall()
 
     for state in states:
